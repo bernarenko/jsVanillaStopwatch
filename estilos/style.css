@@ -63,6 +63,7 @@ div#allButtons {
 div#divCentered{
 
     margin: auto;
+    margin-top: 1em;
     width: 450px;
     border: 2px solid black;  
     text-align: center;

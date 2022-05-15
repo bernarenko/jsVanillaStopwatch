@@ -14,19 +14,15 @@
     </header>
     <main>
         <div id="divCentered">
-            <p>
+            <p id="marcador">
                 Relógio
             </p>
         </div>
 
-        <div>
-
-        </div>
-
         <div class="centeredButtons" id="allButtons">
-            <input type="button" value="Começar" id="butComecar" class="butWatch">
-            <input type="button" value="Parar" id="butParar" class="butWatch">
-            <input type="button" value="Resetar" id="butResetar" class="butWatch">
+            <input type="button" value="Começar" id="butComecar" class="butWatch" onclick="startedClock()">
+            <input type="button" value="Parar" id="butParar" class="butWatch" onclick="stoppedClock()">
+            <input type="button" value="Resetar" id="butResetar" class="butWatch" onclick="resettedClock()">
         </div>
 
     </main>
