@@ -27,6 +27,7 @@ footer{
     padding-left: 1em;
     padding-right: 1em;
     box-sizing: border-box;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.267);
     
 }
 
@@ -69,3 +70,13 @@ div#divCentered{
     text-align: center;
 }
 
+footer a {
+    text-decoration: none;
+    color: lightgreen;
+}
+
+footer a:hover{
+    background-color: orange;
+    color: black;
+    text-decoration: underline;
+}
