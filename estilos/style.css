@@ -89,3 +89,52 @@ footer{
     color: lightblue;
     text-decoration: underline;
 }
+
+.headerFlex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: black;
+}
+
+.headerFlex nav{
+    margin: auto 0;
+}
+
+.headerFlex h1{
+    color: whitesmoke;
+    padding: 10px 5px;
+    margin-left: 5px;
+}
+
+.headerFlex h1 > a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.7em;
+}
+
+.headerFlex h1 > a:hover {
+    text-decoration: underline;
+    color: lightblue;
+}
+
+.headerList{
+    list-style: none;
+}
+
+.headerList a{
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+.headerList a:hover {
+    color: lightblue;
+    text-decoration: underline;
+}
+
+.headerList a::after{
+    content: " \1F517";
+}
+
