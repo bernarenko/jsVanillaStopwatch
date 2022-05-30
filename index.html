@@ -10,24 +10,36 @@
 </head>
 <body>
     <header>
-        <h1>Bem-vindo ao contador em JS puro</h1> 
+        <div>
+            <h1>Evgeniy Bernarenko</h1>
+        </div>
+        <nav>
+            <ul>
+                <li>Projetos</li>
+                <li>github</li>
+                <li>Linkedin</li>
+            </ul>
+        </nav>
     </header>
+
     <main>
-        <div id="divCentered">
-            <p id="marcador">
-                Relógio
-            </p>
-        </div>
-
-        <div class="centeredButtons" id="allButtons">
-            <input type="button" value="Começar" id="butComecar" class="butWatch" onclick="startedClock()">
-            <input type="button" value="Parar" id="butParar" class="butWatch" onclick="stoppedClock()">
-            <input type="button" value="Resetar" id="butResetar" class="butWatch" onclick="resettedClock()">
-        </div>
-
+            <section class="centered">
+            <div class="counterFlex">
+                <h1>Bem-vindo ao contador em JS puro</h1>
+                <p id="marcador">
+                    Relógio
+                </p>
+            </div>
+            <div class="centeredButtons" id="allButtons">
+                <input type="button" value="Começar" id="butComecar" class="butWatch" onclick="startedClock()">
+                <input type="button" value="Parar" id="butParar" class="butWatch" onclick="stoppedClock()">
+                <input type="button" value="Resetar" id="butResetar" class="butWatch" onclick="resettedClock()">
+            </div>
+        </section>
     </main>
-    <footer>
-        <h2><p>Feito por <a href="https://github.com/bernarenko">Bernarenko</p></a></h2>
+
+    <footer class="footerInfo">
+        <p>Feito por <a href="https://github.com/bernarenko">Bernarenko</a></p>
     </footer>
 
     <script src="script/main.js"></script>
