@@ -17,6 +17,7 @@ function startedClock(){
     }
 }
 
+// restartingClock() is called instead from 2nd onwards.
 function startingClock(){
     elapesedTime = (Date.now() - presentTime) / 1000
     
@@ -26,12 +27,15 @@ function startingClock(){
 function restartingClock(){
     reTimed = (Date.now() - presentTime) / 1000
 
-    document.querySelector('p#marcador').innerHTML = elapesedTime + reTimed
+    document.querySelector('p#marcador').innerHTML = reTimed + elapesedTime
 }
 
 function stoppedClock(){
     clearInterval(myInterval)
-    elapesedTime = elapesedTime + reTimed
+    // elapesedTime is a common value that saves all the elapsedTime
+    // saving it on stoppedCLock() is called don't change startingClock(), but make it possible to
+    // restart when the restartingClock() is called.
+     elapesedTime = elapesedTime + reTimed 
     
     document.querySelector('input#butComecar').onclick = startedClock
     document.querySelector('input#butComecar').value = 'Continuar'
