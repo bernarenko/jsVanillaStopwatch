@@ -8,10 +8,10 @@ var reTimed = 0;
 function startedClock(){
     if(presentTime != 0){
         presentTime = Date.now()
-        myInterval = setInterval(restartingClock, 1000)
+        myInterval = setInterval(restartingClock, 50)
     } else {
         presentTime = Date.now()
-        myInterval = setInterval(startingClock, 1000)
+        myInterval = setInterval(startingClock, 50)
         document.querySelector('p#marcador').innerHTML = '0'
         document.querySelector('input#butComecar').onclick = ''
     }
