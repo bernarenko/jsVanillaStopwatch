@@ -43,7 +43,7 @@ function stoppedClock(){
 
 function resettedClock(){
     clearInterval(myInterval)
-    seconds = 0
+    elapesedTime = 0
    
     document.querySelector('p#marcador').innerHTML = 'resetado!'
 }
