@@ -21,13 +21,13 @@ function startedClock(){
 function startingClock(){
     elapesedTime = (Date.now() - presentTime) / 1000
     
-    document.querySelector('p#marcador').innerHTML = elapesedTime 
+    document.querySelector('p#marcador').innerHTML = (elapesedTime).toFixed(2)
 }
 
 function restartingClock(){
     reTimed = (Date.now() - presentTime) / 1000
 
-    document.querySelector('p#marcador').innerHTML = reTimed + elapesedTime
+    document.querySelector('p#marcador').innerHTML = (reTimed + elapesedTime).toFixed(2)
 }
 
 function stoppedClock(){
